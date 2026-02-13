@@ -20,3 +20,11 @@ nav > span{
 nav > img{
     width: 24px;
 }
+.journel-entry{
+    display: flex;
+    justify-content: space-around;
+}
+.main-image{
+    width: 125px;
+    height:168px ;
+}
