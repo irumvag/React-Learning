@@ -1,0 +1,21 @@
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+    <script type="text/babel">
+        const Message=(props)=><div className="message">{props.children}{props.msg}</div>
+        const element= (
+            <div className="container">
+                {Message({msg:"Hello world! =="})}
+                {Message({msg:"Goodbye world =="})}
+                <Message>
+                    Hello World
+                    <Message>Nice to meet you!</Message>
+                    <p>How is it going?</p>
+                </Message>
+            </div>
+        )
+        ReactDOM.render(element, document.getElementById("root"))
+    </script>
+<body>
