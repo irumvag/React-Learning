@@ -1,0 +1,31 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.device-view{
+  width: 317px;
+  background-color: #1A1B21;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+.text-content{
+  text-align: left;
+}
+.body-content{
+  padding-inline: 25px;
+}
+
+h2,p{
+  margin: 0;
+  padding: 0;
+}
+.button-area{
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+}
+.button-area>button{
+  margin: 10px;
+}
