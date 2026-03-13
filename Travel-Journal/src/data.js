@@ -2,7 +2,7 @@ export default [
     {
         id: 1,
         img: {
-            src: "travel-journal-japan-image-url",
+            src: "./src/assets/travel-journal-japan-image-url.png",
             alt: "Mount Fuji"
         },
         title: "Mount Fuji",
@@ -14,7 +14,7 @@ export default [
     {
         id: 2, 
         img: {
-            src: "travel-journal-australia-image-url",
+            src: "./src/assets/travel-journal-australia-image-url.png",
             alt: "Sydney Opera House"
         },
         title: "Sydney Opera House",
@@ -26,7 +26,7 @@ export default [
     {
         id: 3,
         img: {
-            src: "travel-journal-norway-image-url",
+            src: "./src/assets/travel-journal-norway-image-url.png",
             alt: "Geirangerfjord"
         },
         title: "Geirangerfjord",
