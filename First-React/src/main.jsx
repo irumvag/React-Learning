@@ -4,7 +4,8 @@ import { createRoot } from "react-dom/client"
 import Header from "./header.jsx"
 import MainContent from "./MainContent.jsx"
 import Footer from "./footer.jsx"
-
+import State from "./State.jsx"
+import Count from "./Counter.jsx"
 const root = createRoot(document.getElementById("root"))
 /* const reactElement=createElement("h1", null, "Hello from createElement!")
 const reactelm=<h1>hello Gad</h1>
@@ -27,6 +28,11 @@ function Page() {
             <Header />
 			<MainContent />
 			<Footer />
+			<hr />
+			<State />
+			<hr />
+			<Count />
+
         </>
     )
 }
