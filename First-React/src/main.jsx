@@ -6,19 +6,9 @@ import MainContent from "./MainContent.jsx"
 import Footer from "./footer.jsx"
 import State from "./State.jsx"
 import Count from "./Counter.jsx"
-const root = createRoot(document.getElementById("root"))
-/* const reactElement=createElement("h1", null, "Hello from createElement!")
-const reactelm=<h1>hello Gad</h1>
-console.log(reactElement)
-root.render(
-	reactelm
-) 
-function MainContent(){
-	return (
-		<h1>React is great!</h1>
-	)
-}*/
+import ComplexArray from "./ComplexArray.jsx"
 
+const root = createRoot(document.getElementById("root"))
 root.render(
 	<Page />
 )
@@ -30,6 +20,10 @@ function Page() {
 			<Footer />
 			<hr />
 			<State />
+			<hr />
+			<Count />
+			<hr />
+			<ComplexArray />
 			<hr />
 			<Count />
 

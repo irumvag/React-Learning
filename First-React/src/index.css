@@ -111,3 +111,41 @@ main > .value {
     margin-right: -20px;
     z-index: 1;
 }
+
+
+.favoriteMain {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.favoriteMain>button {
+    width: 100%;
+    max-width: 300px;
+    background-color: transparent;
+    padding: 1rem;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    margin-bottom: 20px;
+    background-color: #70B85D;
+    color: white;
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+.favoriteMain>button:hover {
+    background-color: #FFFEF1;
+    color: #2C5E2E;
+}
+
+.plus>button:focus {
+    outline: 0;
+}
+
+.favoriteMain>p {
+    margin-block: 10px;
+    font-size: 2rem;
+}
