@@ -1,12 +1,11 @@
-import { createElement } from "react"
 import { createRoot } from "react-dom/client"
-//import { Fragment } from "react"
 import Header from "./header.jsx"
 import MainContent from "./MainContent.jsx"
 import Footer from "./footer.jsx"
 import State from "./State.jsx"
 import Count from "./Counter.jsx"
 import ComplexArray from "./ComplexArray.jsx"
+import FormManipulation from "./FormManipulation.jsx"
 
 const root = createRoot(document.getElementById("root"))
 root.render(
@@ -26,6 +25,9 @@ function Page() {
 			<ComplexArray />
 			<hr />
 			<Count />
+			<hr />
+			<FormManipulation />
+
 
         </>
     )
