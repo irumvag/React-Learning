@@ -6,6 +6,7 @@ import State from "./State.jsx"
 import Count from "./Counter.jsx"
 import ComplexArray from "./ComplexArray.jsx"
 import FormManipulation from "./FormManipulation.jsx"
+import WindowTracker from "./WindowTracker.jsx"
 
 const root = createRoot(document.getElementById("root"))
 root.render(
@@ -27,6 +28,8 @@ function Page() {
 			<Count />
 			<hr />
 			<FormManipulation />
+			<hr />
+			<WindowTracker />
 
 
         </>
