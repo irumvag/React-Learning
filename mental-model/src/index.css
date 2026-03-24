@@ -5,13 +5,15 @@
 body {
     margin: 0;
     font-family: Inter, sans-serif;
-    background-color:#1b1c21;
+    /* background-color:#1b1c21; */
 }
 
 header {
     height: 90px;
     background-color: #21222A;
     padding: 30px 25px;
+    width: 600px;
+    margin:auto;
 }
 
 nav {
@@ -37,7 +39,10 @@ main{
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 65%;
-  color:white;
+  color:goldenrod;
+  margin: auto;
+  width: 600px;
+  border: #21222A solid;
 }
 main > h1{
   font-style: bold;
@@ -50,4 +55,27 @@ main > ul >li::marker{
   color:#61DAFB;
   font-size: 1.5rem;
 }
+.formContent{
+  width:600px;
+  padding:20px;
+  margin:auto;
+  align-items: center;
+  border-radius: 10%;
+  border: solid #61DAFB ;
+}
 
+.input{
+  width: 100%;
+  padding: 10px;
+  align-self: center;
+  border: 0.1;
+}
+.radioButton{
+  display: block;
+  font-size: 15px;
+  padding: 5px;
+  color:darkgrey
+}
+.verfication{
+  margin-bottom: 20px;
+}
