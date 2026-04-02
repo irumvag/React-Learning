@@ -1,4 +1,5 @@
 import React from 'react';
+//import ExpenseEntryItem from './ExpenseEntryItem.jsx'
 class ExpenseEntryItemList extends React.Component {
    constructor(props) {
       super(props);
@@ -13,6 +14,7 @@ class ExpenseEntryItemList extends React.Component {
          </tr>
       );
       return (
+         <>
          <table>
             <h1>This is the expense Item details</h1>
             <thead>
@@ -27,6 +29,7 @@ class ExpenseEntryItemList extends React.Component {
                {lists}
             </tbody>
          </table>
+         </>
       );
    }
 }
