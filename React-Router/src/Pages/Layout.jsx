@@ -15,6 +15,9 @@ export default function Layout(){
                         <Link to='/greet'>Greeting</Link>
                     </li>
                     <li>
+                        <Link to='/clock'>Time now</Link>
+                    </li>
+                    <li>
                         <Link to='/unkown'>Unkown</Link>
                     </li>
                 </ul> 

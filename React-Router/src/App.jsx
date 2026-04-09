@@ -7,6 +7,7 @@ import Home from './Pages/Home'
 import Welcome from './Pages/Welcome'
 import './App.css'
 import PageNotAvailable from './Pages/PageNotAvailable'
+import Clock from './Pages/Clock'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route index element={<Home />}/>
           <Route path="greet" element={<Greeting/>}/>
           <Route path="welcome" element={<Welcome name='Gad'/>}/>
+          <Route path='clock' element={<Clock/>}/>
           <Route path='*' element={<PageNotAvailable />}/>
         </Route>
       </Routes>
