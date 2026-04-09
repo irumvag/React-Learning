@@ -15,8 +15,8 @@ class ExpenseEntryItemList extends React.Component {
       );
       return (
          <>
+         <h1>This is the expense Item details</h1>
          <table>
-            <h1>This is the expense Item details</h1>
             <thead>
                <tr>
                   <th>Item</th>
