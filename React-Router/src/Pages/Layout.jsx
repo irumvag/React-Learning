@@ -18,6 +18,9 @@ export default function Layout(){
                         <Link to='/clock'>Time now</Link>
                     </li>
                     <li>
+                        <Link to='/log'>message</Link>
+                    </li>
+                    <li>
                         <Link to='/unkown'>Unkown</Link>
                     </li>
                 </ul> 
