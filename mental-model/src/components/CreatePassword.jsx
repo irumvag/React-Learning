@@ -1,5 +1,6 @@
 import React from "react";
 export default function CreatePassword(){
+    const [password,setPassword] = React.useState()
     const [checkPass,setCheckPass] = React.useState()
     const [isDisabled,setDisabled] = React.useState(true)
     function handleSubmit(){    
