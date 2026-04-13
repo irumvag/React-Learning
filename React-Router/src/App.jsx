@@ -10,6 +10,7 @@ import PageNotAvailable from './Pages/PageNotAvailable'
 import Clock from './Pages/Clock'
 import MessageWithEvent from './component/messageWithEvent'
 import SamplePagination from './component/SamplePagination'
+import ExpenseForm from './component/ExpenseForm'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='clock' element={<Clock/>}/>
           <Route path='log' element={<MessageWithEvent name="Gad"/>}/>
           <Route path='pagination' element={<SamplePagination />} />
+          <Route path='Expense-form' element={<ExpenseForm/>}/>
           <Route path='*' element={<PageNotAvailable />}/>
         </Route>
       </Routes>

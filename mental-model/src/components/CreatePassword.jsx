@@ -1,12 +1,35 @@
 import React from "react";
 export default function CreatePassword(){
+    const [isDisabled,setDisabled] = React.useState(false)
     const [password,setPassword] = React.useState()
-    const [checkPass,setCheckPass] = React.useState()
-    const [isDisabled,setDisabled] = React.useState(true)
-    function handleSubmit(){    
+    const [checkPass,setCheckPass] = React.useState({
+        check8Char:false,
+        checkUppercase:false,
+        checkLowercase:false,
+        checkDigit:false,
+        checkSpecial:false
+    })
+    function handleSubmit(){   
+        alert("Password Accepted") 
     }
-    function handleChange(){
-        
+    function handleChange(e){
+        let newState={};
+        for(let i of Object.entries(checkPass)){
+           if(i[0]=='check8Char'){
+            let elem=document.getElementById('check8Char');
+           }else if(i[0]=='checkUppercase'){
+            let elem=document.getElementById('checkUppercase');
+           }else if(i[0]=='checkLowercase'){
+            let elem=document.getElementById('checkLowercase');
+           }else if(i[0]=='checkDigit'){
+            let elem=document.getElementById('checkDigit');
+           }else if(i[0]=='checkSpecial'){
+            let elem=document.getElementById('checkSpecial');
+           }
+        }
+        let elem=document.getElementById('check8Char');
+        elem.checked=elem.checked?false:true;
+        //background-color: #21222A;
     }
     return (
         <>
@@ -22,15 +45,17 @@ export default function CreatePassword(){
             <div className="verfication">
             <label htmlFor="password requirements">
                 <h2>Password Requirement</h2>
-                <label htmlFor="Password Requirement" className="radioButton"><input type="radio" disabled  name="check8Char" id="" value='At least 8 characters'/>At least 8 characters</label>
-                <label htmlFor="Password Requirement" className="radioButton"><input type="radio" disabled  name="checkUppercase" id="" value='Contain uppercase character'/>Contain uppercase character</label>
-                <label htmlFor="Password Requirement" className="radioButton"><input type="radio" disabled  name="checkLowercase" id="" value='Contain lowercase character'/>Contain lowercase character</label>
-                <label htmlFor="Password Requirement" className="radioButton"><input type="radio" disabled  name="checkDigit" id="" value=''/>Contain digit</label>
-                <label htmlFor="Password Requirement" className="radioButton"><input type="radio" disabled  name="checkSpecial" id="" value=''/>Contain special character</label>
+                <label htmlFor="Password Requirement" className="radioButton"><input type="radio" disabled  name="check8Char" id="check8Char" value='At least 8 characters'/>At least 8 characters</label>
+                <label htmlFor="Password Requirement" className="radioButton"><input type="radio" disabled  name="checkUppercase" id="checkUppercase" value='Contain uppercase character'/>Contain uppercase character</label>
+                <label htmlFor="Password Requirement" className="radioButton"><input type="radio" disabled  name="checkLowercase" id="checkLowercase" value='Contain lowercase character'/>Contain lowercase character</label>
+                <label htmlFor="Password Requirement" className="radioButton"><input type="radio" disabled  name="checkDigit" id="checkDigit" value=''/>Contain digit</label>
+                <label htmlFor="Password Requirement" className="radioButton"><input type="radio" disabled  name="checkSpecial" id="checkSpecial" value=''/>Contain special character</label>
             </label>
             </div>
             <label htmlFor="submit">
-                {/* <button {`${isDisabled?'disabled':''}`} className="input">Submit</button> */}
+                { isDisabled ?(<button className="submitButton">Submit</button>):
+                    (<button disabled className="submitButton">Submit</button>)
+                }
             </label>
         </form>
         </>

@@ -70,11 +70,21 @@ main > ul >li::marker{
   align-self: center;
   border: 0.1;
 }
+.submitButton{
+  width: 95%;
+  padding: 10px;
+  align-self: center;
+  border: 0.1;
+  font-size: 24px;
+  color:green;
+  cursor: pointer;
+}
 .radioButton{
   display: block;
   font-size: 15px;
   padding: 5px;
-  color:darkgrey
+  color:black;
+  opacity: 0.5;
 }
 .verfication{
   margin-bottom: 20px;

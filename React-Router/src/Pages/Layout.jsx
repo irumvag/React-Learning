@@ -24,6 +24,9 @@ export default function Layout(){
                         <Link to='/pagination'>Pagination</Link>
                     </li>
                     <li>
+                        <Link to='/Expense-form'>Expense Form</Link>
+                    </li>
+                    <li>
                         <Link to='/unkown'>Unkown</Link>
                     </li>
                 </ul> 
