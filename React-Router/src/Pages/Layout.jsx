@@ -27,6 +27,9 @@ export default function Layout(){
                         <Link to='/Expense-form'>Expense Form</Link>
                     </li>
                     <li>
+                        <Link to='/Expense-formik'>Expense Formik</Link>
+                    </li>
+                    <li>
                         <Link to='/unkown'>Unkown</Link>
                     </li>
                 </ul> 
