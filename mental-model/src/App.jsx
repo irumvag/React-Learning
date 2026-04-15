@@ -10,6 +10,8 @@ import ThemeContext from './components/ThemeContext'
 import HelloWorld1 from './components/Hellowold1'
 import { useState } from 'react'
 import RefInput from './components/RefInput'
+import TodoList from './components/TodoList'
+import TodoReducerList from './components/TodoReducerList'
 
 const store= createStore(rootReducer)
 
@@ -21,6 +23,10 @@ export default function(){
     let [theme, setTheme]= useState(initialValue)
     return (
         <>
+        <div style={{ padding: "5px"}}>
+            <TodoReducerList />
+        </div>
+        <TodoList/>
         <Provider store={store}>
             <ExpenseEntryItemList />
         </Provider>
