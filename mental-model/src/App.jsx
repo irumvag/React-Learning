@@ -12,6 +12,7 @@ import { useState } from 'react'
 import RefInput from './components/RefInput'
 import TodoList from './components/TodoList'
 import TodoReducerList from './components/TodoReducerList'
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 
 const store= createStore(rootReducer)
 
@@ -23,13 +24,22 @@ export default function(){
     let [theme, setTheme]= useState(initialValue)
     return (
         <>
+        <Router>
+            <nav>
+                <Link to='/'>Home</Link>
+                <Link to='/About'>About</Link>
+            </nav>
+            <Routes>
+                <Route path='/' element={ <Provider store={store}>
+                    <ExpenseEntryItemList />
+                </Provider>}/>
+                <Route path='/about' element={<TodoList/>}/>
+            </Routes>
+        </Router>
+
         <div style={{ padding: "5px"}}>
             <TodoReducerList />
         </div>
-        <TodoList/>
-        <Provider store={store}>
-            <ExpenseEntryItemList />
-        </Provider>
         <CreatePassword />
         <Navbar />
         <Main />

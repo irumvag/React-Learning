@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import './ExpenseEntryItemList.css';
 import { deleteExpense } from '../actions';
 import { addExpense } from '../actions';
+import { Outlet } from 'react-router-dom';
 
 class ExpenseEntryItemList extends React.Component {
    constructor(props) {
@@ -77,6 +78,7 @@ class ExpenseEntryItemList extends React.Component {
                   </tr>
                </tbody>
             </table>
+            <Outlet/>
          </div>
       );
    }
